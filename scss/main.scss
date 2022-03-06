@@ -1,0 +1,42 @@
+@import "variables", "resets", "config", "buttons";
+
+.carousel {
+  height: 308px;
+  max-width: 327px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  background-image: url(/dist/images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+
+  .carousel__track-container {
+    width: 77.5%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .carousel__track {
+    list-style: none;
+  }
+
+  .carousel__slide {
+    position: absolute;
+    top: 2rem;
+    max-height: 253.422px;
+  }
+
+  .carousel__image {
+    width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

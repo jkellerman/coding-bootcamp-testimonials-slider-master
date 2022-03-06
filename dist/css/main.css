@@ -1,3 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+}
+
+.carousel__button-container {
+  position: absolute;
+  display: inline-block;
+  bottom: 1%;
+  left: 38%;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+  -webkit-box-shadow: -65px 30px 50px 10px #cbcbf1;
+          box-shadow: -65px 30px 50px 10px #cbcbf1;
+}
+
+.carousel__button-container .carousel__button {
+  background: white;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.carousel__button-container .carousel__button--left {
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+}
+
+.carousel__button-container .carousel__button--right {
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+  margin-left: -9px;
+}
+
+.carousel {
+  height: 308px;
+  max-width: 327px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  background-image: url(/dist/images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.carousel .carousel__track-container {
+  width: 77.5%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel .carousel__track {
+  list-style: none;
+}
+
+.carousel .carousel__slide {
+  position: absolute;
+  top: 2rem;
+  max-height: 253.422px;
+}
+
+.carousel .carousel__image {
+  width: 100%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
