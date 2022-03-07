@@ -84,14 +84,12 @@ body {
   margin: 2rem auto 1rem;
   width: 85%;
   position: relative;
-  min-height: 228px;
+  min-height: 240px;
 }
 
 .bio__container .paragraph__container {
-  height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  min-height: 240px;
 }
 
 .bio__container .paragraph {
@@ -102,6 +100,7 @@ body {
   background-position: top center;
   top: 0;
   position: absolute;
+  height: 100%;
 }
 
 .bio__container .paragraph p {
@@ -109,6 +108,8 @@ body {
   font-weight: 300;
   text-align: center;
   line-height: 24px;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
 }
 
 .bio__container .paragraph .name,
@@ -118,7 +119,7 @@ body {
 }
 
 .bio__container .paragraph .name {
-  margin-top: 1.1875rem;
+  margin-top: 1.75rem;
 }
 
 .bio__container .paragraph .job-title {
@@ -133,7 +134,8 @@ body {
 }
 
 .background-curve img {
-  width: 100%;
+  width: 75%;
+  height: 100%;
 }
 
 footer {
@@ -148,5 +150,11 @@ footer {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (max-width: 304px) {
+  .paragraph:first-child p {
+    line-height: 18px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

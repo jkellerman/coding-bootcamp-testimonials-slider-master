@@ -38,13 +38,11 @@
   margin: 2rem auto 1rem;
   width: 85%;
   position: relative;
-  min-height: 228px;
+  min-height: 240px;
 
   .paragraph__container {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
-    // padding-bottom: 2rem;
+    min-height: 240px;
   }
 
   .paragraph {
@@ -55,12 +53,14 @@
     background-position: top center;
     top: 0;
     position: absolute;
+    height: 100%;
 
     p {
       font-size: 1.125rem;
       font-weight: 300;
       text-align: center;
       line-height: 24px;
+      transform: translateY(1rem);
     }
 
     .name,
@@ -70,7 +70,7 @@
     }
 
     .name {
-      margin-top: 1.1875rem;
+      margin-top: 1.75rem;
     }
 
     .job-title {
@@ -87,7 +87,8 @@
 }
 
 .background-curve img {
-  width: 100%;
+  width: 75%;
+  height: 100%;
 }
 
 footer {
@@ -101,4 +102,10 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 304px) {
+  .paragraph:first-child p {
+    line-height: 18px;
+  }
 }
