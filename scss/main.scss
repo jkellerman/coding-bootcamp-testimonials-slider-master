@@ -5,8 +5,8 @@
   max-width: 327px;
   width: 95%;
   margin: 0 auto;
-  margin-top: 0.75rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
   background-image: url(/dist/images/pattern-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -16,6 +16,7 @@
     width: 77.5%;
     margin: 0 auto;
     position: relative;
+    height: 100%;
   }
 
   .carousel__track {
@@ -31,6 +32,67 @@
   .carousel__image {
     width: 100%;
   }
+}
+
+.bio__container {
+  margin: 2rem auto 1rem;
+  width: 85%;
+  position: relative;
+  min-height: 228px;
+
+  .paragraph__container {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    // padding-bottom: 2rem;
+  }
+
+  .paragraph {
+    background: #fff;
+    background-image: url(/dist/images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: top center;
+    top: 0;
+    position: absolute;
+
+    p {
+      font-size: 1.125rem;
+      font-weight: 300;
+      text-align: center;
+      line-height: 24px;
+    }
+
+    .name,
+    .job-title {
+      font-size: 0.9375rem;
+      text-align: center;
+    }
+
+    .name {
+      margin-top: 1.1875rem;
+    }
+
+    .job-title {
+      color: $secondary-color;
+      margin-bottom: 1.1875rem;
+    }
+  }
+}
+
+.background-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.background-curve img {
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
 }
 
 .attribution {

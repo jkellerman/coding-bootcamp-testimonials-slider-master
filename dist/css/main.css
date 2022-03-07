@@ -11,22 +11,22 @@ body {
 }
 
 .carousel__button-container {
-  position: absolute;
-  display: inline-block;
-  bottom: 1%;
-  left: 38%;
+  position: relative;
+  top: 85%;
+  left: 34%;
+  width: 40%;
   border-top-left-radius: 28px;
   border-bottom-left-radius: 28px;
-  -webkit-box-shadow: -65px 30px 50px 10px #cbcbf1;
-          box-shadow: -65px 30px 50px 10px #cbcbf1;
 }
 
 .carousel__button-container .carousel__button {
   background: white;
   outline: none;
   border: none;
-  padding: 0.75rem 1rem;
+  padding: 0.75em 1.25em;
   cursor: pointer;
+  height: 100%;
+  width: 50%;
 }
 
 .carousel__button-container .carousel__button--left {
@@ -40,13 +40,19 @@ body {
   margin-left: -9px;
 }
 
+@media (max-width: 311px) {
+  .carousel__button-container {
+    top: 70%;
+  }
+}
+
 .carousel {
   height: 308px;
   max-width: 327px;
   width: 95%;
   margin: 0 auto;
-  margin-top: 0.75rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
   background-image: url(/dist/images/pattern-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -57,6 +63,7 @@ body {
   width: 77.5%;
   margin: 0 auto;
   position: relative;
+  height: 100%;
 }
 
 .carousel .carousel__track {
@@ -71,6 +78,67 @@ body {
 
 .carousel .carousel__image {
   width: 100%;
+}
+
+.bio__container {
+  margin: 2rem auto 1rem;
+  width: 85%;
+  position: relative;
+  min-height: 228px;
+}
+
+.bio__container .paragraph__container {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bio__container .paragraph {
+  background: #fff;
+  background-image: url(/dist/images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 75px;
+  background-position: top center;
+  top: 0;
+  position: absolute;
+}
+
+.bio__container .paragraph p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 24px;
+}
+
+.bio__container .paragraph .name,
+.bio__container .paragraph .job-title {
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.bio__container .paragraph .name {
+  margin-top: 1.1875rem;
+}
+
+.bio__container .paragraph .job-title {
+  color: #babacf;
+  margin-bottom: 1.1875rem;
+}
+
+.background-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.background-curve img {
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
 }
 
 .attribution {

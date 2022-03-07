@@ -1,17 +1,19 @@
 .carousel__button-container {
-  position: absolute;
-  display: inline-block;
-  bottom: 1%;
-  left: 38%;
+  position: relative;
+  top: 85%;
+  left: 34%;
+  width: 40%;
   @include box-shadow-left;
-  box-shadow: -65px 30px 50px 10px $slider-shadow;
+  // box-shadow: -50px 15px 40px 10px $slider-shadow;
 
   .carousel__button {
     background: white;
     outline: none;
     border: none;
-    padding: 0.75rem 1rem;
+    padding: 0.75em 1.25em;
     cursor: pointer;
+    height: 100%;
+    width: 50%;
   }
 
   .carousel__button--left {
@@ -22,5 +24,11 @@
     border-top-right-radius: 28px;
     border-bottom-right-radius: 28px;
     margin-left: -9px;
+  }
+}
+
+@media (max-width: 311px) {
+  .carousel__button-container {
+    top: 70%;
   }
 }
