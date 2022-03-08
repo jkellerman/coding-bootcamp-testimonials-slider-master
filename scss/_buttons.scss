@@ -1,1 +1,55 @@
+.prev,
+.next {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
 
+.prev:hover,
+.next:hover {
+  opacity: 0.5;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 90px;
+  height: 45px;
+  box-shadow: -20px 12px 20px 0px $button-shadow;
+  border-radius: 50px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.next::after,
+.prev::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-size: auto;
+  left: 27.5%;
+}
+
+.next::after {
+  background-image: url(/dist/images/icon-next.svg);
+}
+
+.prev::after {
+  background-image: url(/dist/images/icon-prev.svg);
+}

@@ -1,0 +1,29 @@
+@media (min-width: 786px) {
+  .container {
+    background-position: left bottom !important;
+    background-size: 50% !important;
+  }
+  .slider {
+    max-width: 100vw !important;
+  }
+
+  .slide {
+    flex-direction: row !important;
+    text-align: left !important;
+
+    &__img {
+      min-width: 540px;
+    }
+  }
+
+  .slide__text {
+    background-position: 10% top !important;
+    background-size: 100px !important;
+    align-items: flex-start !important;
+    max-width: 635px !important;
+  }
+
+  .buttons {
+    left: 30%;
+  }
+}
