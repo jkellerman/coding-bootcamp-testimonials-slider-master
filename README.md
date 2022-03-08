@@ -63,4 +63,4 @@ I need to be able to create a carousel that also have navigation dots underneath
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/jkellerman)
+- Frontend Mentor - [@jkellerman](https://www.frontendmentor.io/profile/jkellerman)
