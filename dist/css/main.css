@@ -61,11 +61,11 @@ html {
 }
 
 .next::after {
-  background-image: url(dist/images/icon-next.svg);
+  background-image: url(/dist/images/icon-next.svg);
 }
 
 .prev::after {
-  background-image: url(dist/images/icon-prev.svg);
+  background-image: url(/dist/images/icon-prev.svg);
 }
 
 .container {
@@ -81,7 +81,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  background-image: url(dist/images/pattern-curve.svg);
+  background-image: url(/dist/images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -117,7 +117,7 @@ html {
   margin: 0 auto;
   height: 100%;
   padding: 40px;
-  background-image: url(dist/images/pattern-bg.svg);
+  background-image: url(/dist/images/pattern-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -136,7 +136,7 @@ html {
 .slide__text {
   margin-top: 1rem;
   padding-top: 1rem;
-  background-image: url(dist/images/pattern-quotes.svg);
+  background-image: url(/dist/images/pattern-quotes.svg);
   background-repeat: no-repeat;
   background-size: 80px;
   background-position: top center;
