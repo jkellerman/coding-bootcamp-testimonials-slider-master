@@ -1,1 +1,74 @@
+@import "resets", "variables";
 
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-image: url(/dist/images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+
+  .slider {
+    height: 100%;
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+
+    // .slide-2 {
+    //   display: none;
+    // }
+
+    .slide {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      &__img {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        padding: 40px;
+        background-image: url(/dist/images/pattern-bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .testimonial__text {
+    font-weight: 300;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    color: $primary-color;
+  }
+  .author__text {
+    margin-top: 20px;
+    color: $primary-color;
+    font-size: 0.5rem;
+    font-weight: 700;
+
+    span {
+      color: $secondary-color;
+      font-weight: 500;
+      display: block;
+    }
+  }
+}
+
+footer {
+  font-size: 0.4rem;
+}

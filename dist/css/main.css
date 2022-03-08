@@ -5,148 +5,93 @@
   padding: 0;
 }
 
-body {
+html {
   font-family: "Inter", sans-serif;
+  font-size: 32px;
 }
 
-.carousel__button-container {
-  position: relative;
-  top: 85%;
-  left: 34%;
-  width: 40%;
-  border-top-left-radius: 28px;
-  border-bottom-left-radius: 28px;
-}
-
-.carousel__button-container .carousel__button {
-  background: white;
-  outline: none;
-  border: none;
-  padding: 0.75em 1.25em;
-  cursor: pointer;
-  height: 100%;
-  width: 50%;
-}
-
-.carousel__button-container .carousel__button--left {
-  border-top-left-radius: 28px;
-  border-bottom-left-radius: 28px;
-}
-
-.carousel__button-container .carousel__button--right {
-  border-top-right-radius: 28px;
-  border-bottom-right-radius: 28px;
-  margin-left: -9px;
-}
-
-@media (max-width: 311px) {
-  .carousel__button-container {
-    top: 70%;
-  }
-}
-
-.carousel {
+.container {
+  min-height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem auto;
-  overflow: hidden;
-  position: relative;
-  width: 77.5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  background-image: url(/dist/images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
 }
 
-.carousel__images {
+.container .slider {
+  height: 100%;
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container .slider .slide {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: -webkit-transform 0.25s;
-  transition: -webkit-transform 0.25s;
-  transition: transform 0.25s;
-  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.carousel__images img {
-  border-radius: 5px;
+.container .slider .slide__img {
+  width: 100%;
+  margin: 0 auto;
   height: 100%;
-  width: 100%;
-}
-
-.carousel__button {
-  background: teal;
-  border: 0;
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
-  height: 3rem;
-  opacity: 0.25;
-  position: absolute;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
-  width: 3rem;
-  z-index: 1;
-}
-
-.carousel:hover {
-  opacity: 0.5s;
-}
-
-.carousel #previous {
-  left: 5px;
-}
-
-.carousel #next {
-  right: 5px;
-}
-
-.bio__container {
-  margin: 2rem auto 1rem;
-  width: 85%;
-  position: relative;
-  min-height: 240px;
-}
-
-.bio__container .paragraph__container {
-  width: 100%;
-  min-height: 240px;
-}
-
-.bio__container .paragraph {
-  background: #fff;
-  background-image: url(/dist/images/pattern-quotes.svg);
+  padding: 40px;
+  background-image: url(/dist/images/pattern-bg.svg);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 75px;
-  background-position: top center;
-  top: 0;
-  position: absolute;
+  background-size: contain;
+}
+
+.container .slider .slide__img img {
   height: 100%;
+  width: 100%;
 }
 
-.bio__container .paragraph p {
-  font-size: 1.125rem;
+.container .testimonial__text {
   font-weight: 300;
-  text-align: center;
-  line-height: 24px;
-  -webkit-transform: translateY(1rem);
-          transform: translateY(1rem);
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: #202046;
 }
 
-.bio__container .paragraph .name,
-.bio__container .paragraph .job-title {
-  font-size: 0.9375rem;
-  text-align: center;
+.container .author__text {
+  margin-top: 20px;
+  color: #202046;
+  font-size: 0.5rem;
+  font-weight: 700;
 }
 
-.bio__container .paragraph .name {
-  margin-top: 1.75rem;
-}
-
-.bio__container .paragraph .job-title {
+.container .author__text span {
   color: #babacf;
-  margin-bottom: 1.1875rem;
+  font-weight: 500;
+  display: block;
+}
+
+footer {
+  font-size: 0.4rem;
 }
 /*# sourceMappingURL=main.css.map */
